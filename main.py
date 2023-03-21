@@ -8,7 +8,7 @@ CRYPTO = "BTC"
 COMPANY_NAME = "Tesla Inc"
 
 CRYPTO_ENDPOINT = "https://www.alphavantage.co/query"
-CRYPTO_API = "KW9U8NUIOXP5BRX2"
+CRYPTO_API = os.environ['CRYPTO_API_1']
 CRYPTO_PARMETER = {
     "function": "DIGITAL_CURRENCY_DAILY",
     "symbol": "BTC",
@@ -18,7 +18,7 @@ CRYPTO_PARMETER = {
 
 # News
 NEWS_ENDPOINT = "https://newsapi.org/v2/everything"
-NEW_API = "5e7787496deb4387ab9e6d6eb729569a"
+NEW_API = os.environ['NEWS_API']
 NEWS_PARAMETER = {
     "apiKey": NEW_API,
     "q": "BTC",
@@ -26,8 +26,8 @@ NEWS_PARAMETER = {
 }
 
 #Twilio
-ACCOUNT_ID = "ACf4535ca1ca56b92282224fc935fd245a"
-AUTH_TOKEN = "da20711201a4b9be2de438ce3c6ec327"
+ACCOUNT_ID = os.environ['TWILIO_ACCOUNT_SID']
+AUTH_TOKEN = os.environ['TWILIO_AUTH_TOKEN']
 
 client = Client(ACCOUNT_ID,AUTH_TOKEN)
 
