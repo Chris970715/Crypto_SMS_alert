@@ -14,3 +14,9 @@ This code is a Python program that fetches the daily closing price of a cryptocu
 
 The program first imports the necessary libraries and defines some constants and parameters for the APIs used to fetch cryptocurrency price and news data. It also sets up the Twilio client for sending SMS messages.
 
+![mainfsdfsd](https://user-images.githubusercontent.com/39882035/226504649-d613eeae-4d0d-4756-9290-e3eff5290ac4.png)
+
+
+Next, the program fetches the current day's and previous day's cryptocurrency price data using the AlphaVantage API and calculates the percentage change in price. If the percentage change is greater than 5%, the program fetches the top two news articles related to Bitcoin using the NewsAPI and selects one at random. It then sends an SMS message to the specified phone number using the Twilio API, including the percentage change in price, the title and description of the selected news article, and a link to the article.
+
+If the percentage change in price is less than or equal to 5%, no SMS message is sent.
